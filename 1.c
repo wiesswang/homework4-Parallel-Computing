@@ -45,9 +45,9 @@ int main()
 	MPI_Barrier(MPI_COMM_WORLD);
 	
 	if(rank==0){
-    printf("时间：Elapsed time is %.16g seconds\n",end-start );
-    printf("时间精度是 %.16g seconds\n",MPI_Wtick());
-    printf("素数的个数为:%d 个\n",k);
+   		printf("时间：Elapsed time is %.16g seconds\n",end-start );
+		printf("时间精度是 %.16g seconds\n",MPI_Wtick());
+  		printf("素数的个数为:%d 个\n",k);
 	}
 	MPI_Finalize();
 	return 0;
